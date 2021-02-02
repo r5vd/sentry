@@ -6,6 +6,7 @@ import omit from 'lodash/omit';
 
 import {CreateAlertFromViewButton} from 'app/components/createAlertButton';
 import TransactionsList, {DropdownOption} from 'app/components/discover/transactionsList';
+import GlobalSdkSuggestions from 'app/components/globalSdkSuggestions';
 import * as Layout from 'app/components/layouts/thirds';
 import {getParams} from 'app/components/organizations/globalSelectionHeader/getParams';
 import {t} from 'app/locale';
@@ -226,6 +227,7 @@ class SummaryContent extends React.Component<Props, State> {
               end={eventView.end}
               statsPeriod={eventView.statsPeriod}
             />
+            <GlobalSdkSuggestions />
           </Layout.Main>
           <Layout.Side>
             <UserStats

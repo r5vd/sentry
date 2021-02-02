@@ -7,6 +7,7 @@ import Breadcrumbs from 'app/components/breadcrumbs';
 import Button from 'app/components/button';
 import ButtonBar from 'app/components/buttonBar';
 import CreateAlertButton from 'app/components/createAlertButton';
+import GlobalSdkSuggestions from 'app/components/globalSdkSuggestions';
 import IdBadge from 'app/components/idBadge';
 import * as Layout from 'app/components/layouts/thirds';
 import LightWeightNoProjectMessage from 'app/components/lightWeightNoProjectMessage';
@@ -126,6 +127,7 @@ class ProjectDetail extends AsyncView<Props, State> {
                   />
                 ))}
                 <ProjectIssues organization={organization} location={location} />
+                <GlobalSdkSuggestions />
               </Layout.Main>
               <Layout.Side>
                 <ProjectTeamAccess organization={organization} project={project} />
